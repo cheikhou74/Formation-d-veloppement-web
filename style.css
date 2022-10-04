@@ -1,13 +1,43 @@
 body
 {
-    background-color:orange;
-    color: bisque;
+    background-image: url(images/fondcv.jpg);
 }
-h1
+#titre
 {
-    color: beige;
+    text-align: center;
+    
+}
+h2
+{
+    color: brown;
+}
+#metier
+{
+    text-align: center;
+    color: black;
 }
 ul
 {
-    color: whitesmoke;
+    width: 200px;
+    
 }
+section
+{
+    display:inline-block;
+    margin: 30px;
+    vertical-align: text-top;
+    
+}
+@media all and (max-width: 1495px) {
+    main {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    @media all and (min-width: 600px) and (max-width: 1495px) {
+        main {
+          margin-left: 20%;
+        }
+
+
+
+

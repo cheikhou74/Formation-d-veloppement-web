@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+nav
+{
+    display:flex;
+    justify-content: flex-end;
+    background-color: rgb(121, 121, 191);
+    color: black;
+    height: 50px;
+    
+}
+a
+{
+    
+    margin-left: 15px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+#nav
+{
+    margin-right: 1125px;
+    margin-top: 15px;
+}
+#photo
+{
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid black ;
+    height:200px;
+    width: 200px;
+    background-color: white;
+}
+article
+{
+    font-size: large;
+    padding-top: 10%;
+    text-align: center;
+    height: 400px;
+    background-color:rgb(121, 121, 191);
+    color: white;
+}
+
+h2
+{
+    margin-top: 20px;
+}
+#conteneur
+{
+    
+padding: 5px;
+display: flex;
+flex-wrap: wrap;
+margin-left: 30px;
+
+}
+aside
+{
+    width:30%;
+    height:350px;
+    margin: 5px;
+    border: 2px solid black;
+    background-color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .topnav {
+      display: block;
+    }
+
