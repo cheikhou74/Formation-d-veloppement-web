@@ -1,2 +1,2 @@
-# Formation-d-veloppement-web
-## Cheikh omar foutiyou diop
+# Projet Portfolio (Module WEB EPF)
+## Cheikh Omar Foutiyou Diop
