@@ -2,12 +2,16 @@
     box-sizing: border-box;
     margin: 0;
 }
+body
+{
+    background-image: url(images/fondsite.jpg);
+}
 nav
 {
     display:flex;
     justify-content: flex-end;
-    background-color:skyblue;
-    color: black;
+    background-color:rgb(22, 22, 26);
+    color: whitesmoke;
     height: 50px;
 }
 a
@@ -16,6 +20,7 @@ a
     margin-left: 15px;
     margin-top: 15px;
     text-decoration: none;
+    color: whitesmoke;
 }
 #nav
 {
@@ -30,16 +35,18 @@ a
     border: 2px solid black ;
     height:200px;
     width: 200px;
-    background-color: white;
+    background-color: black;
 }
-article
+.banniere
 {
+    background-image: url(images/ban1.jpg);
     font-size: large;
     padding-top: 10%;
     text-align: center;
     height: 400px;
-    background-color:skyblue;
-    color: white;
+    background-size:contain;
+    margin-bottom: 10px;
+    opacity: 1;
 }
 
 h2
@@ -49,29 +56,40 @@ h2
 #conteneur
 {
     
-padding: px;
-display: flex;
+display:flex;
 flex-wrap: wrap;
-margin-left: 30px;
+margin-left:30px;
 
 }
-aside
+.projet
 {
     width:30%;
     height:300px;
     margin: 5px;
-    background-color: antiquewhite;
+    background-color: rgb(110,112,203);
+    background-image: url(images/Projet1.jpg);
+    background-size:contain;
+    animation-name: changement-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes changement-color
+{
+    from{background-color:rgb(110, 112, 203)}
+    to{background-color:rgb(29, 122, 76)}
+    
 }
 form
 {
-    width: 1300px;
+    width: 90%;
     height: 150px;
     margin-left: 35px;
     margin-bottom: 15px;
 }
-label
+.legend
 {
-  
+    margin-top: 5px;
 }
 .formulaire
 {
@@ -79,22 +97,115 @@ label
 }
 fieldset
 {
-    background-color: skyblue;
+    background-color: whitesmoke;
+    
+}
+.boutonfinal
+{
+    margin-left: 50%;
+    background-color: rgb(112, 112, 210);
 }
 footer
 {
-    background-color: skyblue;
-    height: 225px;
+    background-color:rgb(221, 226, 234);
+    height: 400px;
+
+    animation-name:changement-couleur;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+@keyframes changement-couleur
+{
+    from{background-color:rgb(221, 226, 234);}
+    to{background-color:rgb(129, 28, 123)}
 }
 .foot
 {
     text-align: center;
     padding-top: 120px;
     font-size:xx-large;
+    margin: 15px;
+}
+.projet:hover
+{
+    
+    background-color: brown;
+    border: 2px solid black ;
+    box-shadow: rgb(145, 145, 217);
+
 }
 
 
 
+
+
+.gallery {
+    --g: 8px; /* the gap */
+    
+    display: grid;
+    clip-path: inset(1px); /* to avoid visual glitchs */
+  }
+  .gallery > img {
+    --_p: calc(-1*var(--g));
+    grid-area: 1/1;
+    width: 350px; /* control the size */
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: .4s .1s;
+  }
+  .gallery > img:first-child {
+    clip-path: polygon(0 0, calc(100% + var(--_p)) 0 , 0 calc(100% + var(--_p)))
+  }
+  .gallery > img:last-child {
+    clip-path: polygon(100% 100%, 100% calc(0% - var(--_p)), calc(0% - var(--_p)) 100%)
+  }
+  .gallery:hover > img:last-child,
+  .gallery:hover > img:first-child:hover{
+    --_p: calc(50% - var(--g));
+  }
+  .gallery:hover > img:first-child,
+  .gallery:hover > img:first-child:hover + img{
+    --_p: calc(-50% - var(--g));
+  }
+  .PLION
+  {
+    margin-left: 45%;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+  }
+  
+  
+  
+ 
+  
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px)
+{
+    .banniere
+    {
+        display: none;
+    }
+    #conteneur
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #nav
+    {
+        display: none;
+    }
+}
 
 
 

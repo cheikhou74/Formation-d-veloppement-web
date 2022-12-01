@@ -9,68 +9,99 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<header>
+      <header>
   <section>
-    <nav> 
-         <p id="nav">Prénom Nom</p>
-         <a href="#">Acceuil</a>
-         <a href="#">A propos</a>
-         <a href="#">Projets</a>
-         <a href="#">Contacts</a>
-    </nav>
+             <nav> 
+              <p id="nav">Alex  Trader</p>
+              <a href="#">Acceuil</a>
+              <a href="#">A propos</a>
+              <a href="#">Projets</a>
+              <a href="mailto:dadidiop200@gmail.com">Contacts</a>
+             </nav>
   </section>
 
   <section>
-
-    <img  id="photo" src="images/zozor.jpg"  alt="photo du commercial"/>
-    
+    <img  id="photo" src="images/trader.jpg"  alt="photo du trader"/>
   </section>
-</header>
-      
+
+    </header>
+  
 <main>
-    <article>
-      <p>« D'un point de vue purement commercial, si Noël n'existait pas il faudrait l'inventer. » (Katharine Whitehorn).</p>
-    </article>
+    <div class="banniere">
+    </div>
 
     <h2>Les projets</h2>
 
     <div id="conteneur">
-      <aside>Projet 1</aside>
-      <aside>Projet 2</aside>
-      <aside>Projet3</aside>
-      <aside>Projet4</aside>
-      <aside>Projet5</aside>
-      <aside>Projet6</aside>
+
+      <div class="projet">
+     <a href="#" class="p1">Projet 1</a>
+      </div>
+      <div class="projet">
+     <a href="#" class="p2">Projet 2</a>
+      </div>
+      <div class="projet">
+     <a href="#" class="p3">Projet 3</a>
+      </div>
+      <div class="projet">
+      <a href="#" class="p4">Projet 4 </a>
+      </div>
+      <div class="projet">
+      <a href="#" class="p5">Projet 5</a> 
+      </div>
+      <div class="projet">
+      <a href="#" class="p6">Projet 6</a> 
+      </div>
+      
     </div>
 
 <form>
   <fieldset>
-    <legend>Contact</legend>
-
+     <legend class="legend"></legend>
     <div class="formulaire">
       <label for="fname">First name :</label>
-      <input   type="text" name="fname" id="fname" placeholder="first name" >
+      <input   type="text" name="fname" id="fname" placeholder="first name"  required>
     </div>
 
     <div class="formulaire">
       <label for="lname">Last name :</label>
-      <input type="text"  name="lname" id="lname" placeholder="last name">
+      <input type="text"  name="lname" id="lname" placeholder="last name" required>
     </div>
   
     <div class="formulaire">
       <label for="subject">Subject :</label>
-      <input type="text" name="subject" placeholder="write something">
+      <input type="text" name="subject" id="subject"  placeholder="write something" required  >
     </div>
 
-    <input type="submit"  name="boutonfinal" >
+    <div>
+    <input class="boutonfinal" type="submit"  name="boutonfinal" >
+    </div>
+  </fieldset>
 </form>
- </fieldset>
+
+
+
+<div class="gallery">
+  <p  class="PLION"></p>
+  <img src="https://picsum.photos/id/582/400/400" alt="a wolf">
+  <img src="https://picsum.photos/id/1074/400/400" alt="a lioness">
+</div>
+
+
+
+
 
 <footer>
   <div class="foot">
+          <p>Nous sommes présents sur ces réseaux</p>
       <i class="fa-brands fa-facebook"></i>
       <i class="fa-brands fa-twitter"></i>
       <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-sharp fa-solid fa-hexagon-vertical-nft-slanted"></i>
+      <i class="fa-brands fa-facebook-messenger"></i>
+      <i class="fa-brands fa-twitch"></i>
   </div>
 </footer>
 
